@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <body class="site">
+        <div class="site-content">
+            <div class="container pt-5">
+                <div class="row inner-content">
+                    <div class="col-12 col-lg-7 order-md-2">
+                        <div id="formWrapper">
+                           <h2>Twój kalkulator <strong>oszczędności</strong></h2>
+
+                            <!-- kalkulator -->
+                            <form id="kalkulator">
+                                <fieldset>
+                                    <input type="text" name="postalCode" id="postalCode">
+                                    <label for="postalCode">Twój kod pocztowy (np. 00-000)</label>
+                                </fieldset>
+                                <fieldset class="averageValueWrap position-relative">
+                                    <input type="number" name="averageValue" id="averageValue">
+                                    <label id="avgValueLabel" for="averageValue">Średnia miesięczna wartość rachunków za prąd
+                            <span>i </span>
+                            <div class="averageValueInfo">
+                                
+                            </div>
+                        </label>
+                                </fieldset>
+                                <button type="submit" class="button" id="count">zatwierdź</button>
+                            </form>
+                            <div id="warsawMessage">
+
+                            </div>
+
+
+                            <!-- koniec kalkulatora -->
+                        </div>
+                        <div id="formResult" class="hide  mt-5">
+
+                            <p><strong>Tyle aktualnie płacisz</strong></p>
+                            <table class="resultTable">
+                                <tr>
+                                    <td class="rowTitle">Twój dostawca:</td>
+                                    <td class="rowData">Innogy</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">Stawka za 1 kWh:</td>
+                                    <td class="rowData">0,34 zł</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">opłata handlowa:</td>
+                                    <td class="rowData">5,34 zł/ mies.</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">Szacowane mies. zużycie:</td>
+                                    <td class="rowData">150kWh</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">Twoja taryfa:</td>
+                                    <td class="rowData">Jedna stawka w ciągu doby (G11)</td>
+                                </tr>
+                            </table>
+
+                            <p><strong>Tyle mozesz z nami zaoszczędzić!</strong></p>
+                            <div class="displayResult">
+                                <div id="displaySavings">6789 <span> zł</span></div>
+                                <p>Przez cały okres trwania umowy (36 miesięcy)</p>
+                            </div>
+                            <table class="resultTable">
+                                <tr>
+                                    <td class="rowTitle">Nazwa:</td>
+                                    <td class="rowData">Prąd za grosze</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">Stawka za 1 kWh:</td>
+                                    <td class="rowData"><span id="displayUnitPrice"></span> zł</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowTitle">opłata handlowa:</td>
+                                    <td class="rowData"><span id="displayTradeFee"></span> zł/ mies.</td>
+                                </tr>
+                            </table>
+                            <button class="button mt-3">
+                    <a href="#">złóż ofertę</a>
+                </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="obrazekWrap">
+                            <img src="img/img1.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row pt-5 pb-3">
+                    <div class="col-12 text-right">
+                        <div class="pge">
+                            <img src="img/zasila.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer container-fluid pt-4 pb-4">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="kalkulator.js"></script>
+    </body>
+
+</html>

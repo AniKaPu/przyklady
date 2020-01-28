@@ -1,0 +1,17 @@
+#footer-nav{
+    ul{
+        @include md-up{
+            flex-flow: row wrap;
+            li{
+                a{
+                    color:white;
+                }
+            }
+        }
+
+    }
+}
+.footer{
+    background:$color-secondary;
+    color:white;
+}
